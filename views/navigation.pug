@@ -1,0 +1,18 @@
+section.top-nav
+  a#monogram.top-nav--logo(href='/')
+    img(src='/images/monogram.svg' alt='TCB - Trent Cowie Band')
+    h1 Trent Cowie Band
+  nav.top-nav--menu.navigation
+    a.navigation--toggle(href='#')
+      img(src='/images/menu.svg' alt='Menu Button')
+    ul.navigation--list
+      li
+        a(href='/') Home
+      li
+        a(href='/about.html') About
+      li
+        a(href='https://tcbmerch.com') Band Merch
+  div.top-nav--right
+    div.top-nav--right--social-media
+      include social-media.pug
+    a.button(href='mailto:Trentscottcowie@gmail.com?subject=Request%20to%20book%20Trent%20Cowie%20Band&body=Please%20include%20date%2C%20time%2C%20location%2C%20contact%20information%2C%20cover%20charge%20details%2C%20and%20drink%20pricing%20information. -Trent') Book Now

@@ -1,0 +1,31 @@
+extends layout.pug
+
+block main
+  header
+    include navigation.pug
+    h1
+      img(src='/images/trent-cowie-band-logo.svg' alt='Trent Cowie Band')
+  section.music
+    h2
+      cite "She Don't like Roses" 
+      | &nbsp;Music Preview
+    audio(controls src='/audio/trent-cowie-band-she-dont-like-roses-demo.mp3')
+      | Your browser does not support the 
+      code audio
+      |  element.
+    ul.button-group
+      li
+        a.button(href='#itunes') iTunes
+      li
+        a.button(href='#google') Google Play
+      li
+        a.button(href='#spotify') Spotify
+    include social-media.pug
+  section.subscribe
+    h2 Join our mailing list
+    form
+      input(type='text' placeholder='Enter your Email' required='')
+      input.button(type='submit' value='Sign Up')
+  section.schedule
+    h2 Upcoming Events
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftrentcowieband%2F&tabs=events&width=500&height=800&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=1859407347500149" width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
