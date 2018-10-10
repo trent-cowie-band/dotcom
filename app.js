@@ -22,6 +22,12 @@ app.get('/', function (req, res, next) {
   });
 })
 
+app.get('/biography', function (req, res, next) {
+  res.render('biography', {
+    title: "Trent Cowie Band Biography",
+  });
+})
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

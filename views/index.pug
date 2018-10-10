@@ -5,7 +5,7 @@ block main
     include navigation.pug
     h1
       img(src='/images/trent-cowie-band-logo.svg' alt='Trent Cowie Band')
-  section.music
+  section.music.section
     h2
       cite "She Don't like Roses" 
       | &nbsp;Music Preview
@@ -15,17 +15,17 @@ block main
       |  element.
     ul.button-group
       li
-        a.button(href='#itunes') iTunes
+        a.button(target="_blank" href='https://itunes.apple.com/us/artist/trent-cowie-band/1437293083') iTunes
       li
-        a.button(href='#google') Google Play
+        a.button(target="_blank" href='https://play.google.com/store/music/artist/Trent_Cowie_Band?id=A6a667zj7qk3zvenp3tl7dpgmhu') Google Play
       li
-        a.button(href='#spotify') Spotify
+        a.button(target="_blank" href='https://open.spotify.com/album/4Y3q9hURmV6IN7PobSclSV?si=hzM0VXDHQqO3HvOjZOVW2Q') Spotify
     include social-media.pug
-  section.subscribe
+  section.subscribe.section
     h2 Join our mailing list
     form
       input(type='text' placeholder='Enter your Email' required='')
       input.button(type='submit' value='Sign Up')
-  section.schedule
+  section.schedule.section
     h2 Upcoming Events
     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftrentcowieband%2F&tabs=events&width=500&height=800&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=1859407347500149" width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
